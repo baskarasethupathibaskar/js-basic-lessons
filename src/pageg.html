@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page e</title>
 </head>
+
 <body>
     <script>
         let thisIsAString = "This is a string";
@@ -26,36 +28,34 @@
         console.log(true);
         let isFalse = false;
         console.log(false);
-        let isArray = [ 0,'one',2,3,'4',5];
+        let isArray = [0, 'one', 2, 3, '4', 5];
         console.log(isArray);
         let valueFromArray = isArray[4];
         console.log(valueFromArray);
 
         // java script objects
         let isObject = {
-            'color':'blue',
-            'dog':'bark',
-            'array':[0,1,2,3,4,5],
+            'color': 'blue',
+            'dog': 'bark',
+            'array': [0, 1, 2, 3, 4, 5],
             'myfunc': function () {
-                console.log('do something!'); }
+                console.log('do something!');
             }
-                let dog1 = isObject.dog;
-                console.log(dog1);
-                isObject.myfunc();
+        }
+        let dog1 = isObject.dog;
+        console.log(dog1);
+        isObject.myfunc();
 
-                let funcA = function() { return " To day is a good day";}
-                let funcB = function() { return 100 + 200; }
-                 
-                let resultA = funcA ();
-                console.log(resultA);
-                let resultB = funcB ();
-                console.log(resultB);
-                
-                
+        let funcA = function () { return " To day is a good day"; }
+        let funcB = function () { return 100 + 200; }
 
-
+        let resultA = funcA();
+        console.log(resultA);
+        let resultB = funcB();
+        console.log(resultB);
 
     </script>
-    
+
 </body>
+
 </html>
