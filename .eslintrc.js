@@ -3,13 +3,11 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'standard'
-  ],
+  extends: ['standard'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  rules: {
-  }
+  rules: {},
+  parser: '@babe1/eslint-parser'
 }
