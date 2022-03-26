@@ -5,120 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <style>
-        :root {
-            --main-font: "Red Hat Display", sans-serif;
-            --background-color: hsl(225, 100%, 94%);
-            --container-box-shadow: -2x 10px 24px -11px rgba(0, 0, 0, 0.62);
-            --btn-box-shadow: 5px 10px 20px hsl(245, 75%, 90%);
-            --dark-blue: hsl(223, 47%, 23%);
-            --desaturated-blue: hsl(224, 23%, 55%);
-            --very-pale-blue: hsl(225, 100%, 98%);
-            --bright-blue: hsl(245, 75%, 52%);
-            --light-grey: rgb(136, 133, 133);
-            --white: rgb(255, 255, 255);
-            --red: red;
-        }
+    <title>INDEX</title>
+    <link rel="stylesheet" href="./themes/index.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        html,
-        body {
-            overflow-x: hidden;
-        }
-
-        body {
-            min-height: 140vh;
-            background-color: white;
-
-        }
-
-        .order-title-container {
-            width: 80%;
-            height: 100%;
-            max-height: 14rem;
-            font-family: var(--main-font);
-            color: var(--dark-blue);
-            text-align: center;
-            margin: 0 auto;
-            margin-top: 3rem;
-        }
-
-        div {
-            height: 20px;
-            border: 1px solid #1e08ec;
-            align-content: center;
-        }
-    </style>
 </head>
 
 <body>
 
-    <table style="margin: auto;">
-        <h1 class="order-title-container">
-            MENU - HTML
-        </h1>
-        <thead>
-            <tr>
-                <th class="order-title-container" scope="col" width="50">
-                    Pages
-                </th>
-            </tr>
-        </thead>
-        <div>
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <a href="./src/pagea.html">Pagea</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageb.html">Pageb</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagec.html">Pagec</a>
-                        </div>
-                        <div>
-                            <a href="./src/paged.html">Paged</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagee.html">Pagee</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagef.html">Pagef</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageg.html">Pageg</a>
-                        </div>
-                        <div>
-                            <a href="./src/pageh.html">Pageh</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagei.html">Pagei</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagej.html">Pagei</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagek.html">Pagei</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagel.html">Pagei</a>
-                        </div>
-                        <div>
-                            <a href="./src/pagem.html">Pagei</a>
-                        </div>
-
-                    </td>
-                </tr>
-            </tbody>
-    </table>
+    <div class="main">
+        <div class="topnav">
+            <a href="#">CHALLENGES</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+        </div>
     </div>
+    <h1>Welcome To MyPage</h1>
+    <p class="p1">LEARN HTML CSS & JavaScript</p>
+
+    <button class="button"><a href="menu.html">Click Here</a></button>
+    <table>
+        <div class="column">
+            <img src="images/html logo.jpg" height="60" width="80">
+            <img src="images/css logo.jpg" height="60" width="50">
+        </div>
+        <div class="row">
+            <img class="img1" src="images/js6.jpg" height="60" width="90">
+        </div>
+
+        <div style="color: white;">
+            <p>
+                “Every great developer you know got
+            <p>
+            </p>
+            there by solving problems they were unqualified
+            </p>
+            <p>
+                to solve until they actually did it.”
+            </p>
+        </div>
+
+    </table>
 </body>
 
 </html>
