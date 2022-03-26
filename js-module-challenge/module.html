@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currencies</title>
+    <link rel="stylesheet" href="./themes/style.css">
+
+    <style>
+        .dropbtn {
+            background: transparent;
+            color: rgb(10, 10, 10);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f7f306;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td><input type="number" value=""></td>
+            <td>Select a Currency
+                <!-- <select name="currency" id="currency">
+                    <option>Select a Currency</option>
+                    <option value="  USD: United States Dollar"> USD: 'United States Dollar'
+                    </option>
+                    <option value="  AUD: Australian Dollar "> AUD: 'Australian Dollar'
+                    </option>
+                    <option value="  BGN: Bulgarian Lev "> BGN: 'Bulgarian Lev'
+                    </option>
+                    <option value="  BRL: Brazilian Real "> BRL: 'Brazilian Real'
+                    </option>
+                    <option value="  CAD: Canadian Dollar "> CAD: 'Canadian Dollar'
+                    </option>
+                    <option value="  CHF: Swiss Franc "> CHF: 'Swiss Franc'
+                    </option>
+                    <option value="  CNY: Chinese Yuan "> CNY: 'Chinese Yuan'
+                    </option>
+                    <option value="  CZK: Czech Republic Koruna"> CZK: 'Czech Republic Koruna'
+                    </option>
+                    <option value="  DKK: Danish Krone "> DKK: 'Danish Krone'
+                    </option>
+                    <option value="  GBP: British Pound Sterling"> GBP: British Pound Sterling</option>
+                    <option value="  HKD: Hong Kong Dollar "> HKD: 'Hong Kong Dollar'
+                    </option>
+                    <option value="  HRK: Croatian Kuna "> HRK: 'Croatian Kuna'
+                    </option>
+                    <option value="  HUF: Hungarian Forint "> HUF: 'Hungarian Forint'
+                    </option>
+                    <option value="  IDR: Indonesian Rupiah "> IDR: 'Indonesian Rupiah'
+                    </option>
+                    <option value="  ILS: Israeli New Sheqel"> ILS: 'Israeli New Sheqel'
+                    </option>
+                    <option value="  INR: Indian Rupee">INR: 'Indian Rupee'
+                    </option>
+                    <option value="  JPY: Japanese Yen"> JPY: 'Japanese Yen'
+                    </option>
+                    <option value="  KRW: South Korean Won"> KRW: 'South Korean Won'
+                    </option>
+                    <option value="  MXN: Mexican Peso"> MXN: 'Mexican Peso'
+                    </option>
+                    <option value="  MYR: Malaysian Ringgit"> MYR: 'Malaysian Ringgit'
+                    </option>
+                    <option value="  NOK: Norwegian Krone"> NOK: 'Norwegian Krone'
+                    </option>
+                    <option value="  NZD: New Zealand Dollar"> NZD: 'New Zealand Dollar'
+                    </option>
+                    <option value="  PHP: Philippine Peso"> PHP: 'Philippine Peso'
+                    </option>
+                    <option value="  PLN: Polish Zloty"> PLN: 'Polish Zloty'
+                    </option>
+                    <option value="  RON: Romanian Leu"> RON: 'Romanian Leu'
+                    </option>
+                    <option value="  RUB: Russian Ruble">RUB: Russian Ruble</option>
+                    <option value="  SEK: Swedish Krona"> SEK: 'Swedish Krona'
+                    </option>
+                    <option value="  SGD: Singapore Dollar"> SGD: 'Singapore Dollar'
+                    </option>
+                    <option value="  THB: Thai Baht"> THB: 'Thai Baht'
+                    </option>
+                    <option value="  TRY: Turkish Lira"> TRY: 'Turkish Lira'
+                    </option>
+                    <option value="  ZAR: South African Rand"> ZAR: 'South African Rand'
+                    </option>
+                    <option value="  EUR: 'Euro"> EUR: 'Euro'
+                    </option>
+                </select> -->
+            </td>
+
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>Select a Currency</td>
+        </tr>
+        <tr>
+            <td>is</td>
+            <td>$0</td>
+        </tr>
+    </table>
+    <script src="./scripts/money.js"></script>
+</body>
+
+</html>
