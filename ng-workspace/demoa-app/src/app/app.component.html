@@ -1,0 +1,13 @@
+<h1>Welcome to Angular {{ title }} from {{location}}</h1>
+<hr />
+<div>
+  <app-boxa labelValue="location" [data]="location" (onBoxDataChange)="onBoxValueChange($event)"></app-boxa>
+</div>
+<div>
+  <app-boxa data="chennai" (onBoxDataChange)="onBoxValueChange($event)"></app-boxa>
+  <!-- <app-boxa data="chennai"></app-boxa> -->
+</div>
+
+<div>
+  <app-customer-form></app-customer-form>
+</div>
