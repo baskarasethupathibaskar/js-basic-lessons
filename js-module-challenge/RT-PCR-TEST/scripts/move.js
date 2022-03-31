@@ -39,8 +39,8 @@ export function move() {
         cell11 = newRow.insertCell(10);
       cell1.innerHTML = store_obj["firstname"];
       cell2.innerHTML = store_obj["lastname"];
-      cell4.innerHTML = store_obj["aadhar"];
-      cell3.innerHTML = store_obj["date of birth"];
+      cell3.innerHTML = store_obj["aadhar"];
+      cell4.innerHTML = store_obj["date of birth"];
       cell5.innerHTML = store_obj["city"];
       cell6.innerHTML = store_obj["date"];
       cell7.innerHTML = store_obj["time"];
