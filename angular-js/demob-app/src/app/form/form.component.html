@@ -1,0 +1,60 @@
+<div class="form">
+    <form name="Form" #formGroup="ngForm" (submit)="saveCustomer(formGroup)">
+        <h1>RT-PCR-FORM</h1>
+        <div class="container">
+            <div class="tab tab-container">
+                <div class="field">
+                    <label for="fname">Person Name :</label>
+                    <input placeholder="Enter First Name" class="form-control" name="personname" type="text"
+                        [ngModel]="formModel.PersonName" required minlength="3" #PersonNameFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="aadhar">Aadhar Numbar :</label>
+                    <input placeholder="Enter Aadhar Numbar" class="form-control" name="aadhar" type="number"
+                        [ngModel]="formModel.AadharNumbar" required minlength="3" #AadharNumbarFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="date-of-birth">Date Of Birth :</label>
+                    <input placeholder="Enter Last Name" class="form-control" name="DateOfBirth " type="date"
+                        [ngModel]="formModel.DateOfBirth" required minlength="3" #DateOfBirthFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="city">City :</label>
+                    <input placeholder="Enter Your City" class="form-control" name="City" type="text"
+                        [ngModel]="formModel.City" required minlength="3" #CityFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="date-of-test">Date Of Test :</label>
+                    <input placeholder="Enter Your Date" class="form-control" name="Date" type="date"
+                        [ngModel]="formModel.DateOfTest" required minlength="3" #DateOfTestFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="time-of-test">Time Of Test :</label>
+                    <input placeholder="Enter Your Time" class="form-control" name="Time" type="time"
+                        [ngModel]="formModel.TimeOfTest" required minlength="3" #TimeOfTestFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="result">Result :</label>
+                    <input placeholder="Enter your Result" class="form-control" name="Result" type="text"
+                        [ngModel]="formModel.Result" required minlength="3" #ResultFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="lab">Lab Name :</label>
+                    <input placeholder="Enter Lab Name" class="form-control" name="Lab" type="text"
+                        [ngModel]="formModel.LabName" required minlength="3" #LabFormControl="ngModel" />
+                </div>
+                <div class="field">
+                    <label for="report">Report Number :</label>
+                    <input placeholder="Enter your Report" class="form-control" name="Report" type="number"
+                        [ngModel]="formModel.Report" required minlength="3" #ReportFormControl="ngModel" />
+                </div>
+                <div class="field" id="check-gen">
+                    <label for="gender">Gender :</label>
+                    <input placeholder="Gender" class="form-control" type="text" name="Gender"
+                        [ngModel]="formModel.Gender" required minlength="3" #GenderFormControl="ngModel" />
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="btn">Add</button>
+            </div>
+        </div>
