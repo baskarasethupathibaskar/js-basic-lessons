@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -9,8 +9,15 @@ export class FormComponent implements OnInit {
   
 //data-model
 formModel:any;
-constructor() { console.log("customer form loaded")
-}
+@Input()
+  data: any;
+  counter = 0;
+  @Output()
+  onBoxDataChange: 
+  EventEmitter<any>
+   = new EventEmitter();
+  
+constructor() { }
 
 ngOnInit(): void {
   this.formModel = {
@@ -26,6 +33,10 @@ ngOnInit(): void {
     Gender : '',
 
   }
+}
+onchange(event: Event) {
+  this.data = (event.target as HTMLInputElement).value;
+  this.onBoxDataChange.emit({value: this.data});
 }
 saveCustomer(formGroup: any) {
   if (formGroup.valid) {
