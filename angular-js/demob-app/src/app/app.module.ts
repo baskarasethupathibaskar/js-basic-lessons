@@ -18,9 +18,20 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { PriceDiscountPipe } from './price-discount.pipe';
+import { BookComponent } from './book/book.component';
+import { TabComponent } from './tab/tab.component';
+import { BookCatlogComponent } from './book-catlog/book-catlog.component';
+import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
+import { MenuComponent } from './menu/menu.component';
+import { BookformComponent } from './bookform/bookform.component';
 const routes: Routes = [
-  {path:'Dashboard',component:FormComponent},
-  {path:'User',component:UserComponent}
+  // {path:'Dashboard',component:FormComponent},
+  // {path:'User',component:UserComponent}
+  {path:'',component:HomeComponent},
+  {path:'news',component:NewsComponent},
+  {path:'books',component:BookCatlogComponent},
+  {path:'addbook',component:BookformComponent},
 ];
 
 
@@ -32,7 +43,14 @@ const routes: Routes = [
     DemoformComponent,
     FormComponent,
     UserComponent,
-    PriceDiscountPipe
+    PriceDiscountPipe,
+    BookComponent,
+    TabComponent,
+    BookCatlogComponent,
+    HomeComponent,
+    NewsComponent,
+    MenuComponent,
+    BookformComponent
   ],
   imports: [
     BrowserModule,
